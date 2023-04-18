@@ -1,0 +1,257 @@
+[
+{
+  "directory": "/freeture/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/aravis-0.8 -I/opt/arenasdk/include/Arena -I/opt/arenasdk/include/Save -I/opt/arenasdk/include/GenTL -I/opt/arenasdk/GenICam/library/CPP/include -I/freeture/build -isystem /usr/include/opencv4  -std=c++11 -O3 -DNDEBUG -o CMakeFiles/freeture.dir/freeture/src/AcqSchedule.cpp.o -c /freeture/src/AcqSchedule.cpp",
+  "file": "/freeture/src/AcqSchedule.cpp"
+},
+{
+  "directory": "/freeture/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/aravis-0.8 -I/opt/arenasdk/include/Arena -I/opt/arenasdk/include/Save -I/opt/arenasdk/include/GenTL -I/opt/arenasdk/GenICam/library/CPP/include -I/freeture/build -isystem /usr/include/opencv4  -std=c++11 -O3 -DNDEBUG -o CMakeFiles/freeture.dir/freeture/src/AcqThread.cpp.o -c /freeture/src/AcqThread.cpp",
+  "file": "/freeture/src/AcqThread.cpp"
+},
+{
+  "directory": "/freeture/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/aravis-0.8 -I/opt/arenasdk/include/Arena -I/opt/arenasdk/include/Save -I/opt/arenasdk/include/GenTL -I/opt/arenasdk/GenICam/library/CPP/include -I/freeture/build -isystem /usr/include/opencv4  -std=c++11 -O3 -DNDEBUG -o CMakeFiles/freeture.dir/freeture/src/Base64.cpp.o -c /freeture/src/Base64.cpp",
+  "file": "/freeture/src/Base64.cpp"
+},
+{
+  "directory": "/freeture/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/aravis-0.8 -I/opt/arenasdk/include/Arena -I/opt/arenasdk/include/Save -I/opt/arenasdk/include/GenTL -I/opt/arenasdk/GenICam/library/CPP/include -I/freeture/build -isystem /usr/include/opencv4  -std=c++11 -O3 -DNDEBUG -o CMakeFiles/freeture.dir/freeture/src/CameraDeviceManager.cpp.o -c /freeture/src/CameraDeviceManager.cpp",
+  "file": "/freeture/src/CameraDeviceManager.cpp"
+},
+{
+  "directory": "/freeture/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/aravis-0.8 -I/opt/arenasdk/include/Arena -I/opt/arenasdk/include/Save -I/opt/arenasdk/include/GenTL -I/opt/arenasdk/GenICam/library/CPP/include -I/freeture/build -isystem /usr/include/opencv4  -std=c++11 -O3 -DNDEBUG -o CMakeFiles/freeture.dir/freeture/src/CameraFrames.cpp.o -c /freeture/src/CameraFrames.cpp",
+  "file": "/freeture/src/CameraFrames.cpp"
+},
+{
+  "directory": "/freeture/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/aravis-0.8 -I/opt/arenasdk/include/Arena -I/opt/arenasdk/include/Save -I/opt/arenasdk/include/GenTL -I/opt/arenasdk/GenICam/library/CPP/include -I/freeture/build -isystem /usr/include/opencv4  -std=c++11 -O3 -DNDEBUG -o CMakeFiles/freeture.dir/freeture/src/CameraGigeAravis.cpp.o -c /freeture/src/CameraGigeAravis.cpp",
+  "file": "/freeture/src/CameraGigeAravis.cpp"
+},
+{
+  "directory": "/freeture/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/aravis-0.8 -I/opt/arenasdk/include/Arena -I/opt/arenasdk/include/Save -I/opt/arenasdk/include/GenTL -I/opt/arenasdk/GenICam/library/CPP/include -I/freeture/build -isystem /usr/include/opencv4  -std=c++11 -O3 -DNDEBUG -o CMakeFiles/freeture.dir/freeture/src/CameraGigeAravisScanner.cpp.o -c /freeture/src/CameraGigeAravisScanner.cpp",
+  "file": "/freeture/src/CameraGigeAravisScanner.cpp"
+},
+{
+  "directory": "/freeture/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/aravis-0.8 -I/opt/arenasdk/include/Arena -I/opt/arenasdk/include/Save -I/opt/arenasdk/include/GenTL -I/opt/arenasdk/GenICam/library/CPP/include -I/freeture/build -isystem /usr/include/opencv4  -std=c++11 -O3 -DNDEBUG -o CMakeFiles/freeture.dir/freeture/src/CameraGigePylon.cpp.o -c /freeture/src/CameraGigePylon.cpp",
+  "file": "/freeture/src/CameraGigePylon.cpp"
+},
+{
+  "directory": "/freeture/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/aravis-0.8 -I/opt/arenasdk/include/Arena -I/opt/arenasdk/include/Save -I/opt/arenasdk/include/GenTL -I/opt/arenasdk/GenICam/library/CPP/include -I/freeture/build -isystem /usr/include/opencv4  -std=c++11 -O3 -DNDEBUG -o CMakeFiles/freeture.dir/freeture/src/CameraGigeTis.cpp.o -c /freeture/src/CameraGigeTis.cpp",
+  "file": "/freeture/src/CameraGigeTis.cpp"
+},
+{
+  "directory": "/freeture/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/aravis-0.8 -I/opt/arenasdk/include/Arena -I/opt/arenasdk/include/Save -I/opt/arenasdk/include/GenTL -I/opt/arenasdk/GenICam/library/CPP/include -I/freeture/build -isystem /usr/include/opencv4  -std=c++11 -O3 -DNDEBUG -o CMakeFiles/freeture.dir/freeture/src/CameraLucidArena.cpp.o -c /freeture/src/CameraLucidArena.cpp",
+  "file": "/freeture/src/CameraLucidArena.cpp"
+},
+{
+  "directory": "/freeture/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/aravis-0.8 -I/opt/arenasdk/include/Arena -I/opt/arenasdk/include/Save -I/opt/arenasdk/include/GenTL -I/opt/arenasdk/GenICam/library/CPP/include -I/freeture/build -isystem /usr/include/opencv4  -std=c++11 -O3 -DNDEBUG -o CMakeFiles/freeture.dir/freeture/src/CameraLucidArenaScanner.cpp.o -c /freeture/src/CameraLucidArenaScanner.cpp",
+  "file": "/freeture/src/CameraLucidArenaScanner.cpp"
+},
+{
+  "directory": "/freeture/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/aravis-0.8 -I/opt/arenasdk/include/Arena -I/opt/arenasdk/include/Save -I/opt/arenasdk/include/GenTL -I/opt/arenasdk/GenICam/library/CPP/include -I/freeture/build -isystem /usr/include/opencv4  -std=c++11 -O3 -DNDEBUG -o CMakeFiles/freeture.dir/freeture/src/CameraLucidArena_PHX016S.cpp.o -c /freeture/src/CameraLucidArena_PHX016S.cpp",
+  "file": "/freeture/src/CameraLucidArena_PHX016S.cpp"
+},
+{
+  "directory": "/freeture/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/aravis-0.8 -I/opt/arenasdk/include/Arena -I/opt/arenasdk/include/Save -I/opt/arenasdk/include/GenTL -I/opt/arenasdk/GenICam/library/CPP/include -I/freeture/build -isystem /usr/include/opencv4  -std=c++11 -O3 -DNDEBUG -o CMakeFiles/freeture.dir/freeture/src/CameraLucidArena_PHX016SScanner.cpp.o -c /freeture/src/CameraLucidArena_PHX016SScanner.cpp",
+  "file": "/freeture/src/CameraLucidArena_PHX016SScanner.cpp"
+},
+{
+  "directory": "/freeture/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/aravis-0.8 -I/opt/arenasdk/include/Arena -I/opt/arenasdk/include/Save -I/opt/arenasdk/include/GenTL -I/opt/arenasdk/GenICam/library/CPP/include -I/freeture/build -isystem /usr/include/opencv4  -std=c++11 -O3 -DNDEBUG -o CMakeFiles/freeture.dir/freeture/src/CameraScanner.cpp.o -c /freeture/src/CameraScanner.cpp",
+  "file": "/freeture/src/CameraScanner.cpp"
+},
+{
+  "directory": "/freeture/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/aravis-0.8 -I/opt/arenasdk/include/Arena -I/opt/arenasdk/include/Save -I/opt/arenasdk/include/GenTL -I/opt/arenasdk/GenICam/library/CPP/include -I/freeture/build -isystem /usr/include/opencv4  -std=c++11 -O3 -DNDEBUG -o CMakeFiles/freeture.dir/freeture/src/CameraV4l2.cpp.o -c /freeture/src/CameraV4l2.cpp",
+  "file": "/freeture/src/CameraV4l2.cpp"
+},
+{
+  "directory": "/freeture/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/aravis-0.8 -I/opt/arenasdk/include/Arena -I/opt/arenasdk/include/Save -I/opt/arenasdk/include/GenTL -I/opt/arenasdk/GenICam/library/CPP/include -I/freeture/build -isystem /usr/include/opencv4  -std=c++11 -O3 -DNDEBUG -o CMakeFiles/freeture.dir/freeture/src/CameraVideo.cpp.o -c /freeture/src/CameraVideo.cpp",
+  "file": "/freeture/src/CameraVideo.cpp"
+},
+{
+  "directory": "/freeture/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/aravis-0.8 -I/opt/arenasdk/include/Arena -I/opt/arenasdk/include/Save -I/opt/arenasdk/include/GenTL -I/opt/arenasdk/GenICam/library/CPP/include -I/freeture/build -isystem /usr/include/opencv4  -std=c++11 -O3 -DNDEBUG -o CMakeFiles/freeture.dir/freeture/src/CameraWindows.cpp.o -c /freeture/src/CameraWindows.cpp",
+  "file": "/freeture/src/CameraWindows.cpp"
+},
+{
+  "directory": "/freeture/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/aravis-0.8 -I/opt/arenasdk/include/Arena -I/opt/arenasdk/include/Save -I/opt/arenasdk/include/GenTL -I/opt/arenasdk/GenICam/library/CPP/include -I/freeture/build -isystem /usr/include/opencv4  -std=c++11 -O3 -DNDEBUG -o CMakeFiles/freeture.dir/freeture/src/CfgLoader.cpp.o -c /freeture/src/CfgLoader.cpp",
+  "file": "/freeture/src/CfgLoader.cpp"
+},
+{
+  "directory": "/freeture/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/aravis-0.8 -I/opt/arenasdk/include/Arena -I/opt/arenasdk/include/Save -I/opt/arenasdk/include/GenTL -I/opt/arenasdk/GenICam/library/CPP/include -I/freeture/build -isystem /usr/include/opencv4  -std=c++11 -O3 -DNDEBUG -o CMakeFiles/freeture.dir/freeture/src/CfgParam.cpp.o -c /freeture/src/CfgParam.cpp",
+  "file": "/freeture/src/CfgParam.cpp"
+},
+{
+  "directory": "/freeture/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/aravis-0.8 -I/opt/arenasdk/include/Arena -I/opt/arenasdk/include/Save -I/opt/arenasdk/include/GenTL -I/opt/arenasdk/GenICam/library/CPP/include -I/freeture/build -isystem /usr/include/opencv4  -std=c++11 -O3 -DNDEBUG -o CMakeFiles/freeture.dir/freeture/src/Conversion.cpp.o -c /freeture/src/Conversion.cpp",
+  "file": "/freeture/src/Conversion.cpp"
+},
+{
+  "directory": "/freeture/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/aravis-0.8 -I/opt/arenasdk/include/Arena -I/opt/arenasdk/include/Save -I/opt/arenasdk/include/GenTL -I/opt/arenasdk/GenICam/library/CPP/include -I/freeture/build -isystem /usr/include/opencv4  -std=c++11 -O3 -DNDEBUG -o CMakeFiles/freeture.dir/freeture/src/DetThread.cpp.o -c /freeture/src/DetThread.cpp",
+  "file": "/freeture/src/DetThread.cpp"
+},
+{
+  "directory": "/freeture/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/aravis-0.8 -I/opt/arenasdk/include/Arena -I/opt/arenasdk/include/Save -I/opt/arenasdk/include/GenTL -I/opt/arenasdk/GenICam/library/CPP/include -I/freeture/build -isystem /usr/include/opencv4  -std=c++11 -O3 -DNDEBUG -o CMakeFiles/freeture.dir/freeture/src/DetectionTemplate.cpp.o -c /freeture/src/DetectionTemplate.cpp",
+  "file": "/freeture/src/DetectionTemplate.cpp"
+},
+{
+  "directory": "/freeture/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/aravis-0.8 -I/opt/arenasdk/include/Arena -I/opt/arenasdk/include/Save -I/opt/arenasdk/include/GenTL -I/opt/arenasdk/GenICam/library/CPP/include -I/freeture/build -isystem /usr/include/opencv4  -std=c++11 -O3 -DNDEBUG -o CMakeFiles/freeture.dir/freeture/src/DetectionTemporal.cpp.o -c /freeture/src/DetectionTemporal.cpp",
+  "file": "/freeture/src/DetectionTemporal.cpp"
+},
+{
+  "directory": "/freeture/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/aravis-0.8 -I/opt/arenasdk/include/Arena -I/opt/arenasdk/include/Save -I/opt/arenasdk/include/GenTL -I/opt/arenasdk/GenICam/library/CPP/include -I/freeture/build -isystem /usr/include/opencv4  -std=c++11 -O3 -DNDEBUG -o CMakeFiles/freeture.dir/freeture/src/Device.cpp.o -c /freeture/src/Device.cpp",
+  "file": "/freeture/src/Device.cpp"
+},
+{
+  "directory": "/freeture/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/aravis-0.8 -I/opt/arenasdk/include/Arena -I/opt/arenasdk/include/Save -I/opt/arenasdk/include/GenTL -I/opt/arenasdk/GenICam/library/CPP/include -I/freeture/build -isystem /usr/include/opencv4  -std=c++11 -O3 -DNDEBUG -o CMakeFiles/freeture.dir/freeture/src/EParser.cpp.o -c /freeture/src/EParser.cpp",
+  "file": "/freeture/src/EParser.cpp"
+},
+{
+  "directory": "/freeture/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/aravis-0.8 -I/opt/arenasdk/include/Arena -I/opt/arenasdk/include/Save -I/opt/arenasdk/include/GenTL -I/opt/arenasdk/GenICam/library/CPP/include -I/freeture/build -isystem /usr/include/opencv4  -std=c++11 -O3 -DNDEBUG -o CMakeFiles/freeture.dir/freeture/src/Ephemeris.cpp.o -c /freeture/src/Ephemeris.cpp",
+  "file": "/freeture/src/Ephemeris.cpp"
+},
+{
+  "directory": "/freeture/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/aravis-0.8 -I/opt/arenasdk/include/Arena -I/opt/arenasdk/include/Save -I/opt/arenasdk/include/GenTL -I/opt/arenasdk/GenICam/library/CPP/include -I/freeture/build -isystem /usr/include/opencv4  -std=c++11 -O3 -DNDEBUG -o CMakeFiles/freeture.dir/freeture/src/ErrorManager.cpp.o -c /freeture/src/ErrorManager.cpp",
+  "file": "/freeture/src/ErrorManager.cpp"
+},
+{
+  "directory": "/freeture/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/aravis-0.8 -I/opt/arenasdk/include/Arena -I/opt/arenasdk/include/Save -I/opt/arenasdk/include/GenTL -I/opt/arenasdk/GenICam/library/CPP/include -I/freeture/build -isystem /usr/include/opencv4  -std=c++11 -O3 -DNDEBUG -o CMakeFiles/freeture.dir/freeture/src/ExposureControl.cpp.o -c /freeture/src/ExposureControl.cpp",
+  "file": "/freeture/src/ExposureControl.cpp"
+},
+{
+  "directory": "/freeture/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/aravis-0.8 -I/opt/arenasdk/include/Arena -I/opt/arenasdk/include/Save -I/opt/arenasdk/include/GenTL -I/opt/arenasdk/GenICam/library/CPP/include -I/freeture/build -isystem /usr/include/opencv4  -std=c++11 -O3 -DNDEBUG -o CMakeFiles/freeture.dir/freeture/src/Fits.cpp.o -c /freeture/src/Fits.cpp",
+  "file": "/freeture/src/Fits.cpp"
+},
+{
+  "directory": "/freeture/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/aravis-0.8 -I/opt/arenasdk/include/Arena -I/opt/arenasdk/include/Save -I/opt/arenasdk/include/GenTL -I/opt/arenasdk/GenICam/library/CPP/include -I/freeture/build -isystem /usr/include/opencv4  -std=c++11 -O3 -DNDEBUG -o CMakeFiles/freeture.dir/freeture/src/Fits2D.cpp.o -c /freeture/src/Fits2D.cpp",
+  "file": "/freeture/src/Fits2D.cpp"
+},
+{
+  "directory": "/freeture/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/aravis-0.8 -I/opt/arenasdk/include/Arena -I/opt/arenasdk/include/Save -I/opt/arenasdk/include/GenTL -I/opt/arenasdk/GenICam/library/CPP/include -I/freeture/build -isystem /usr/include/opencv4  -std=c++11 -O3 -DNDEBUG -o CMakeFiles/freeture.dir/freeture/src/Fits3D.cpp.o -c /freeture/src/Fits3D.cpp",
+  "file": "/freeture/src/Fits3D.cpp"
+},
+{
+  "directory": "/freeture/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/aravis-0.8 -I/opt/arenasdk/include/Arena -I/opt/arenasdk/include/Save -I/opt/arenasdk/include/GenTL -I/opt/arenasdk/GenICam/library/CPP/include -I/freeture/build -isystem /usr/include/opencv4  -std=c++11 -O3 -DNDEBUG -o CMakeFiles/freeture.dir/freeture/src/Frame.cpp.o -c /freeture/src/Frame.cpp",
+  "file": "/freeture/src/Frame.cpp"
+},
+{
+  "directory": "/freeture/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/aravis-0.8 -I/opt/arenasdk/include/Arena -I/opt/arenasdk/include/Save -I/opt/arenasdk/include/GenTL -I/opt/arenasdk/GenICam/library/CPP/include -I/freeture/build -isystem /usr/include/opencv4  -std=c++11 -O3 -DNDEBUG -o CMakeFiles/freeture.dir/freeture/src/Freeture.cpp.o -c /freeture/src/Freeture.cpp",
+  "file": "/freeture/src/Freeture.cpp"
+},
+{
+  "directory": "/freeture/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/aravis-0.8 -I/opt/arenasdk/include/Arena -I/opt/arenasdk/include/Save -I/opt/arenasdk/include/GenTL -I/opt/arenasdk/GenICam/library/CPP/include -I/freeture/build -isystem /usr/include/opencv4  -std=c++11 -O3 -DNDEBUG -o CMakeFiles/freeture.dir/freeture/src/GlobalEvent.cpp.o -c /freeture/src/GlobalEvent.cpp",
+  "file": "/freeture/src/GlobalEvent.cpp"
+},
+{
+  "directory": "/freeture/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/aravis-0.8 -I/opt/arenasdk/include/Arena -I/opt/arenasdk/include/Save -I/opt/arenasdk/include/GenTL -I/opt/arenasdk/GenICam/library/CPP/include -I/freeture/build -isystem /usr/include/opencv4  -std=c++11 -O3 -DNDEBUG -o CMakeFiles/freeture.dir/freeture/src/Histogram.cpp.o -c /freeture/src/Histogram.cpp",
+  "file": "/freeture/src/Histogram.cpp"
+},
+{
+  "directory": "/freeture/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/aravis-0.8 -I/opt/arenasdk/include/Arena -I/opt/arenasdk/include/Save -I/opt/arenasdk/include/GenTL -I/opt/arenasdk/GenICam/library/CPP/include -I/freeture/build -isystem /usr/include/opencv4  -std=c++11 -O3 -DNDEBUG -o CMakeFiles/freeture.dir/freeture/src/HistogramGray.cpp.o -c /freeture/src/HistogramGray.cpp",
+  "file": "/freeture/src/HistogramGray.cpp"
+},
+{
+  "directory": "/freeture/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/aravis-0.8 -I/opt/arenasdk/include/Arena -I/opt/arenasdk/include/Save -I/opt/arenasdk/include/GenTL -I/opt/arenasdk/GenICam/library/CPP/include -I/freeture/build -isystem /usr/include/opencv4  -std=c++11 -O3 -DNDEBUG -o CMakeFiles/freeture.dir/freeture/src/HistogramRGB.cpp.o -c /freeture/src/HistogramRGB.cpp",
+  "file": "/freeture/src/HistogramRGB.cpp"
+},
+{
+  "directory": "/freeture/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/aravis-0.8 -I/opt/arenasdk/include/Arena -I/opt/arenasdk/include/Save -I/opt/arenasdk/include/GenTL -I/opt/arenasdk/GenICam/library/CPP/include -I/freeture/build -isystem /usr/include/opencv4  -std=c++11 -O3 -DNDEBUG -o CMakeFiles/freeture.dir/freeture/src/ImgProcessing.cpp.o -c /freeture/src/ImgProcessing.cpp",
+  "file": "/freeture/src/ImgProcessing.cpp"
+},
+{
+  "directory": "/freeture/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/aravis-0.8 -I/opt/arenasdk/include/Arena -I/opt/arenasdk/include/Save -I/opt/arenasdk/include/GenTL -I/opt/arenasdk/GenICam/library/CPP/include -I/freeture/build -isystem /usr/include/opencv4  -std=c++11 -O3 -DNDEBUG -o CMakeFiles/freeture.dir/freeture/src/LocalEvent.cpp.o -c /freeture/src/LocalEvent.cpp",
+  "file": "/freeture/src/LocalEvent.cpp"
+},
+{
+  "directory": "/freeture/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/aravis-0.8 -I/opt/arenasdk/include/Arena -I/opt/arenasdk/include/Save -I/opt/arenasdk/include/GenTL -I/opt/arenasdk/GenICam/library/CPP/include -I/freeture/build -isystem /usr/include/opencv4  -std=c++11 -O3 -DNDEBUG -o CMakeFiles/freeture.dir/freeture/src/Mask.cpp.o -c /freeture/src/Mask.cpp",
+  "file": "/freeture/src/Mask.cpp"
+},
+{
+  "directory": "/freeture/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/aravis-0.8 -I/opt/arenasdk/include/Arena -I/opt/arenasdk/include/Save -I/opt/arenasdk/include/GenTL -I/opt/arenasdk/GenICam/library/CPP/include -I/freeture/build -isystem /usr/include/opencv4  -std=c++11 -O3 -DNDEBUG -o CMakeFiles/freeture.dir/freeture/src/NodeExporterMetrics.cpp.o -c /freeture/src/NodeExporterMetrics.cpp",
+  "file": "/freeture/src/NodeExporterMetrics.cpp"
+},
+{
+  "directory": "/freeture/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/aravis-0.8 -I/opt/arenasdk/include/Arena -I/opt/arenasdk/include/Save -I/opt/arenasdk/include/GenTL -I/opt/arenasdk/GenICam/library/CPP/include -I/freeture/build -isystem /usr/include/opencv4  -std=c++11 -O3 -DNDEBUG -o CMakeFiles/freeture.dir/freeture/src/OpenSSL.cpp.o -c /freeture/src/OpenSSL.cpp",
+  "file": "/freeture/src/OpenSSL.cpp"
+},
+{
+  "directory": "/freeture/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/aravis-0.8 -I/opt/arenasdk/include/Arena -I/opt/arenasdk/include/Save -I/opt/arenasdk/include/GenTL -I/opt/arenasdk/GenICam/library/CPP/include -I/freeture/build -isystem /usr/include/opencv4  -std=c++11 -O3 -DNDEBUG -o CMakeFiles/freeture.dir/freeture/src/PixFmtConv.cpp.o -c /freeture/src/PixFmtConv.cpp",
+  "file": "/freeture/src/PixFmtConv.cpp"
+},
+{
+  "directory": "/freeture/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/aravis-0.8 -I/opt/arenasdk/include/Arena -I/opt/arenasdk/include/Save -I/opt/arenasdk/include/GenTL -I/opt/arenasdk/GenICam/library/CPP/include -I/freeture/build -isystem /usr/include/opencv4  -std=c++11 -O3 -DNDEBUG -o CMakeFiles/freeture.dir/freeture/src/SMTPClient.cpp.o -c /freeture/src/SMTPClient.cpp",
+  "file": "/freeture/src/SMTPClient.cpp"
+},
+{
+  "directory": "/freeture/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/aravis-0.8 -I/opt/arenasdk/include/Arena -I/opt/arenasdk/include/Save -I/opt/arenasdk/include/GenTL -I/opt/arenasdk/GenICam/library/CPP/include -I/freeture/build -isystem /usr/include/opencv4  -std=c++11 -O3 -DNDEBUG -o CMakeFiles/freeture.dir/freeture/src/SaveImg.cpp.o -c /freeture/src/SaveImg.cpp",
+  "file": "/freeture/src/SaveImg.cpp"
+},
+{
+  "directory": "/freeture/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/aravis-0.8 -I/opt/arenasdk/include/Arena -I/opt/arenasdk/include/Save -I/opt/arenasdk/include/GenTL -I/opt/arenasdk/GenICam/library/CPP/include -I/freeture/build -isystem /usr/include/opencv4  -std=c++11 -O3 -DNDEBUG -o CMakeFiles/freeture.dir/freeture/src/Stack.cpp.o -c /freeture/src/Stack.cpp",
+  "file": "/freeture/src/Stack.cpp"
+},
+{
+  "directory": "/freeture/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/aravis-0.8 -I/opt/arenasdk/include/Arena -I/opt/arenasdk/include/Save -I/opt/arenasdk/include/GenTL -I/opt/arenasdk/GenICam/library/CPP/include -I/freeture/build -isystem /usr/include/opencv4  -std=c++11 -O3 -DNDEBUG -o CMakeFiles/freeture.dir/freeture/src/StackThread.cpp.o -c /freeture/src/StackThread.cpp",
+  "file": "/freeture/src/StackThread.cpp"
+},
+{
+  "directory": "/freeture/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/aravis-0.8 -I/opt/arenasdk/include/Arena -I/opt/arenasdk/include/Save -I/opt/arenasdk/include/GenTL -I/opt/arenasdk/GenICam/library/CPP/include -I/freeture/build -isystem /usr/include/opencv4  -std=c++11 -O3 -DNDEBUG -o CMakeFiles/freeture.dir/freeture/src/TimeDate.cpp.o -c /freeture/src/TimeDate.cpp",
+  "file": "/freeture/src/TimeDate.cpp"
+},
+{
+  "directory": "/freeture/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/aravis-0.8 -I/opt/arenasdk/include/Arena -I/opt/arenasdk/include/Save -I/opt/arenasdk/include/GenTL -I/opt/arenasdk/GenICam/library/CPP/include -I/freeture/build -isystem /usr/include/opencv4  -std=c++11 -O3 -DNDEBUG -o CMakeFiles/freeture.dir/freeture/src/main.cpp.o -c /freeture/src/main.cpp",
+  "file": "/freeture/src/main.cpp"
+},
+{
+  "directory": "/freeture/build",
+  "command": "/usr/bin/gcc -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/aravis-0.8 -I/opt/arenasdk/include/Arena -I/opt/arenasdk/include/Save -I/opt/arenasdk/include/GenTL -I/opt/arenasdk/GenICam/library/CPP/include -I/freeture/build -isystem /usr/include/opencv4 -O3 -DNDEBUG -o CMakeFiles/freeture.dir/freeture/src/sdk/GenICam/library/CPP/include/xsde/c/expat/xmltok_impl.c.o -c /freeture/src/sdk/GenICam/library/CPP/include/xsde/c/expat/xmltok_impl.c",
+  "file": "/freeture/src/sdk/GenICam/library/CPP/include/xsde/c/expat/xmltok_impl.c"
+},
+{
+  "directory": "/freeture/build",
+  "command": "/usr/bin/gcc -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_LOG_SETUP_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/aravis-0.8 -I/opt/arenasdk/include/Arena -I/opt/arenasdk/include/Save -I/opt/arenasdk/include/GenTL -I/opt/arenasdk/GenICam/library/CPP/include -I/freeture/build -isystem /usr/include/opencv4 -O3 -DNDEBUG -o CMakeFiles/freeture.dir/freeture/src/sdk/GenICam/library/CPP/include/xsde/c/expat/xmltok_ns.c.o -c /freeture/src/sdk/GenICam/library/CPP/include/xsde/c/expat/xmltok_ns.c",
+  "file": "/freeture/src/sdk/GenICam/library/CPP/include/xsde/c/expat/xmltok_ns.c"
+}
+]
