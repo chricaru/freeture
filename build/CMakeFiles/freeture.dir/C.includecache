@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/freeture/src/sdk/GenICam/library/CPP/include/xsde/c/expat/xmltok_impl.c
+
+/freeture/src/sdk/GenICam/library/CPP/include/xsde/c/expat/xmltok_ns.c
+
