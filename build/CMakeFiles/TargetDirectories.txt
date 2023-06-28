@@ -1,7 +1,7 @@
-/freeture/build/CMakeFiles/install/strip.dir
-/freeture/build/CMakeFiles/install/local.dir
-/freeture/build/CMakeFiles/install.dir
-/freeture/build/CMakeFiles/list_install_components.dir
-/freeture/build/CMakeFiles/rebuild_cache.dir
-/freeture/build/CMakeFiles/edit_cache.dir
-/freeture/build/CMakeFiles/freeture.dir
+/home/mattia/Desktop/freeture/freeture/build/CMakeFiles/install/strip.dir
+/home/mattia/Desktop/freeture/freeture/build/CMakeFiles/install/local.dir
+/home/mattia/Desktop/freeture/freeture/build/CMakeFiles/install.dir
+/home/mattia/Desktop/freeture/freeture/build/CMakeFiles/list_install_components.dir
+/home/mattia/Desktop/freeture/freeture/build/CMakeFiles/rebuild_cache.dir
+/home/mattia/Desktop/freeture/freeture/build/CMakeFiles/edit_cache.dir
+/home/mattia/Desktop/freeture/freeture/build/CMakeFiles/freeture.dir

@@ -303,7 +303,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/freeture/build"
+			"value" : "/home/mattia/Desktop/freeture/freeture/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -887,7 +887,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/freeture/cmake"
+			"value" : "/home/mattia/Desktop/freeture/freeture/cmake"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1395,7 +1395,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/bin/uname"
+			"value" : "/usr/bin/uname"
 		},
 		{
 			"name" : "CMAKE_VERBOSE_MAKEFILE",
@@ -3407,7 +3407,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/freeture/build"
+			"value" : "/home/mattia/Desktop/freeture/freeture/build"
 		},
 		{
 			"name" : "freeture_SOURCE_DIR",
@@ -3419,7 +3419,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/freeture/cmake"
+			"value" : "/home/mattia/Desktop/freeture/freeture/cmake"
 		},
 		{
 			"name" : "pkgcfg_lib_PC_LibGLIB2_glib-2.0",

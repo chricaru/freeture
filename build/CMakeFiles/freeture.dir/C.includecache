@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/freeture/src/sdk/GenICam/library/CPP/include/xsde/c/expat/xmltok_impl.c
+/home/mattia/Desktop/freeture/freeture/src/sdk/GenICam/library/CPP/include/xsde/c/expat/xmltok_impl.c
 
-/freeture/src/sdk/GenICam/library/CPP/include/xsde/c/expat/xmltok_ns.c
+/home/mattia/Desktop/freeture/freeture/src/sdk/GenICam/library/CPP/include/xsde/c/expat/xmltok_ns.c
 
