@@ -1080,8 +1080,15 @@ using namespace std;
     bool CameraLucidArena_PHX016S::setContinuousMode() {
         try {
             LOG_DEBUG << "CameraLucidArena_PHX016S::setContinuousMode" << endl;
+
+            if (!checkSDKDevice())
+                throw runtime_error("SDK not initialized");
+
             Arena::SetNodeValue<GenICam::gcstring>(m_ArenaDevice->GetNodeMap(), "AcquisitionMode", "Continuous");
-            setFPS(m_CameraSettings.ACQ_FPS);
+
+            if (!setFPS(m_CameraSettings.ACQ_FPS))
+                return false;
+
             return true;
         }
         catch (GenICam::GenericException& e) {
@@ -1308,15 +1315,15 @@ using namespace std;
             return true;
         }
         catch (GenICam::GenericException& e) {
-            LOG_ERROR << "CameraLucidArena_PHX016S::configurationCheck;" << e.what() << endl;
+            LOG_ERROR << "CameraLucidArena_PHX016S::getTemperature;" << e.what() << endl;
         }
         catch (std::exception& ex)
         {
-            LOG_ERROR << "CameraLucidArena_PHX016S::configurationCheck;" << "Standard exception thrown: " << ex.what() << endl;
+            LOG_ERROR << "CameraLucidArena_PHX016S::getTemperature;" << "Standard exception thrown: " << ex.what() << endl;
         }
         catch (...)
         {
-            LOG_ERROR << "CameraLucidArena_PHX016S::configurationCheck;" << "Unexpected exception thrown";
+            LOG_ERROR << "CameraLucidArena_PHX016S::getTemperature;" << "Unexpected exception thrown";
         }
 
         return false;
@@ -1625,21 +1632,21 @@ using namespace std;
                 //    Ethernet settings may also be manually changed to allow for a
                 //    larger packet size.
 
-                LOG_DEBUG << "CameraLucidArena_PHX016S::grabInitialization;" << "Set camera TriggerMode to Off" << endl;
+                LOG_DEBUG << "CameraLucidArena_PHX016S::init;" << "Set camera TriggerMode to Off" << endl;
                 Arena::SetNodeValue<GenICam::gcstring>(m_ArenaDevice->GetNodeMap(), "TriggerMode", "Off");
 
                 return true;
             }
             catch (GenICam::GenericException& e) {
-                LOG_ERROR << "CameraLucidArena_PHX016S::grabInitialization;" << e.what() << endl;
+                LOG_ERROR << "CameraLucidArena_PHX016S::init;" << e.what() << endl;
             }
             catch (std::exception& ex)
             {
-                LOG_ERROR << "CameraLucidArena_PHX016S::grabInitialization;" << "Standard exception thrown: " << ex.what() << endl;
+                LOG_ERROR << "CameraLucidArena_PHX016S::init;" << "Standard exception thrown: " << ex.what() << endl;
             }
             catch (...)
             {
-                LOG_ERROR << "CameraLucidArena_PHX016S::grabInitialization;" << "Unexpected exception thrown" << endl;
+                LOG_ERROR << "CameraLucidArena_PHX016S::init;" << "Unexpected exception thrown" << endl;
             }
             
 
@@ -1673,6 +1680,17 @@ using namespace std;
             if (!checkSDKDevice())
                 throw runtime_error("SDK not initialized");
 
+            //SET SINGLESHOT MODE
+            if (!setDayRegular()) {
+                LOG_ERROR << "CameraLucidArena_PHX016S::configurationCheck;" << "Set DAY REGULAR configuration failed" << endl;
+                return false;
+            }
+
+            if (!setNightRegular()) {
+                LOG_ERROR << "CameraLucidArena_PHX016S::configurationCheck;" << "Set NIGHT REGULAR configuration failed";
+                return false;
+            }
+
             //SET CONTINUOUS MODE 
             if (!setDayContinuous()) {
                 LOG_ERROR << "CameraLucidArena_PHX016S::configurationCheck;" << "Set DAY CONTINUOUS configuration failed" << endl;
@@ -1683,19 +1701,6 @@ using namespace std;
             if (!setNightContinuous()) {
                 LOG_ERROR << "CameraLucidArena_PHX016S::configurationCheck;" << "Set NIGHT REGULAR configuration failed" << endl;
                 return false;
-
-            }
-
-            //SET SINGLESHOT MODE
-            if (!setDayRegular()) {
-                LOG_ERROR << "CameraLucidArena_PHX016S::configurationCheck;" << "Set DAY REGULAR configuration failed" << endl;
-                return false;
-            }
-
-            if (!setNightRegular()) {
-                LOG_ERROR << "CameraLucidArena_PHX016S::configurationCheck;" << "Set NIGHT REGULAR configuration failed";
-                return false;
-
             }
 
             return true;

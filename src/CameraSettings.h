@@ -16,6 +16,6 @@ namespace freeture
         int    StartY = 0;
         int    SizeWidth = 0;
         int    SizeHeight = 0;
-        CamPixFmt PixelFormat = CamPixFmt::MONO8;
+        CamPixFmt PixelFormat = CamPixFmt::MONO12;
     };
 }

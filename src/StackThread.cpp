@@ -146,13 +146,13 @@ bool StackThread::buildStackDataDirectory(TimeDate::Date date){
     // If DATA_PATH exists
     if(fs::exists(p)){
 
-        // If DATA_PATH/STATION_YYYYMMDD/ exists
+        // If DATA_PATH/STATION_CODE_YYYYMMDD/ exists
         if(fs::exists(p1)){
 
-            // If DATA_PATH/STATION_YYYYMMDD/stacks/ doesn't exists
+            // If DATA_PATH/STATION_CODE_YYYYMMDD/stacks/ doesn't exists
             if(!fs::exists(p2)){
 
-                // If fail to create DATA_PATH/STATION_YYYYMMDD/stacks/
+                // If fail to create DATA_PATH/STATION_CODE_YYYYMMDD/stacks/
                 if(!fs::create_directory(p2)){
 
                     LOG_ERROR << "Unable to create stacks directory : " << p2.string() << endl;
@@ -212,28 +212,25 @@ bool StackThread::buildStackDataDirectory(TimeDate::Date date){
             LOG_INFO << "Success to create DATA_PATH directory : " << p.string() << endl;
 
             // If fail to create DATA_PATH/STATION_YYYYMMDD/
-            if(!fs::create_directory(p1)){
-
+            if(!fs::create_directory(p1))
+            {
                 LOG_ERROR << "Unable to create STATION_YYYYMMDD directory : " << p1.string() << endl;
                 return false;
-
             // If success to create DATA_PATH/STATION_YYYYMMDD/
-            }else{
+            } else {
 
                 LOG_INFO << "Success to create STATION_YYYYMMDD directory : " << p1.string() << endl;
 
                 // If fail to create DATA_PATH/STATION_YYYYMMDD/stacks/
-                if(!fs::create_directory(p2)){
+                if(!fs::create_directory(p2)) {
 
                     LOG_ERROR << "Unable to create stacks directory : " << p2.string() << endl;
                     return false;
 
                 // If success to create DATA_PATH/STATION_YYYYMMDD/stacks/
-                }else{
-
+                } else {
                     LOG_INFO << "Success to create stacks directory : " << p2.string() << endl;
                     return true;
-
                 }
             }
         }

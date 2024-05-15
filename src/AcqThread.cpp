@@ -172,7 +172,14 @@ AcqThread::AcqThread(
     LOG_DEBUG << "AcqThread::AcqThread" << endl;
     shared_ptr<CameraDeviceManager> m_CameraDeviceManager = CameraDeviceManager::Get();
     m_Device                 = m_CameraDeviceManager->getDevice();
-    
+
+    //initialize low frequency camera settings from camera configuration parameters
+    m_CurrentCameraSettings.CustomSize = cfg->getCamParam().ACQ_RES_CUSTOM_SIZE;
+    m_CurrentCameraSettings.SizeHeight = cfg->getCamParam().ACQ_HEIGHT;
+    m_CurrentCameraSettings.SizeWidth = cfg->getCamParam().ACQ_WIDTH;
+    m_CurrentCameraSettings.StartX = cfg->getCamParam().ACQ_STARTX;
+    m_CurrentCameraSettings.StartY = cfg->getCamParam().ACQ_STARTY;
+    m_CurrentCameraSettings.PixelFormat = cfg->getCamParam().ACQ_FORMAT;
 }
 
 AcqThread::~AcqThread(void){

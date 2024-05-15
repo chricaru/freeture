@@ -119,9 +119,9 @@ void Device::Setup(cameraParam cp, framesParam fp, videoParam vp)
 
 
 Device::Device() {
-    LOG_DEBUG << "Device::Device";
+    LOG_DEBUG << "Device::Device" << endl;
     
-    CameraSetting.PixelFormat   = CamPixFmt::MONO8;
+    CameraSetting.PixelFormat   = CamPixFmt::MONO12;
     CameraSetting.FPS           = 30;
     CameraSetting.CustomSize    = false;
     CameraSetting.StartX        = 0;
@@ -142,11 +142,11 @@ Device::Device() {
 
 Device::~Device()
 {
-    LOG_DEBUG <<  "Device::~Device";
+    LOG_DEBUG <<  "Device::~Device" << endl;
 
     if(m_Camera != nullptr)
     {
-        LOG_DEBUG <<  "Device::~Device: deallocating camera";
+        LOG_DEBUG <<  "Device::~Device: deallocating camera" << endl;
         delete m_Camera;
     }
 
@@ -166,27 +166,27 @@ bool Device::firstIinitializeCamera(string m_ConfigurationFilePath)
 }
 
 string Device::getDeviceModel() {
-    LOG_DEBUG << "Device::getDeviceModel";
+    LOG_DEBUG << "Device::getDeviceModel" << endl;
 
     return m_Camera->getModel();
 
 }
 
 bool Device::getDeviceName() {
-    LOG_DEBUG << "Device::getDeviceName";
+    LOG_DEBUG << "Device::getDeviceName" << endl;
 
     return m_Camera->getCameraName();
 
 }
 
 bool Device::setCameraPixelFormat() {
-    LOG_DEBUG << "Device::setCameraPixelFormat";
+    LOG_DEBUG << "Device::setCameraPixelFormat" << endl;
 
     if(!m_Camera->setPixelFormat())
     {
         m_Camera->grabCleanse();
         
-        LOG_ERROR << "Device::setCameraPixelFormat;" << "Fail to set camera format.";
+        LOG_ERROR << "Device::setCameraPixelFormat;" << "Fail to set camera format." << endl;
         return false;
     }
 
@@ -195,22 +195,22 @@ bool Device::setCameraPixelFormat() {
 
 bool Device::getSupportedPixelFormats()
 {
-    LOG_DEBUG << "Device::getSupportedPixelFormats";
+    LOG_DEBUG << "Device::getSupportedPixelFormats" << endl;
     m_Camera->getAvailablePixelFormats();
     return true;
 }
 
 InputDeviceType Device::getDeviceType() {
     if (LOG_SPAM_FRAME_STATUS)
-        LOG_DEBUG << "Device::getDeviceType";
+        LOG_DEBUG << "Device::getDeviceType" << endl;
     return m_Camera->getDeviceType();
 }
 
 bool Device::setCameraFPS(double value) {
-    LOG_DEBUG << "Device::setCameraFPS("<< value << ")";
+    LOG_DEBUG << "Device::setCameraFPS("<< value << ")" << endl;
 
     if(!m_Camera->setFPS(value)) {
-        LOG_ERROR << "Device::setCameraFPS;" << "Fail to set fps to " << value;
+        LOG_ERROR << "Device::setCameraFPS;" << "Fail to set fps to " << value << endl;
         m_Camera->grabCleanse();
         return false;
     }
@@ -221,11 +221,11 @@ bool Device::setCameraFPS(double value) {
 
 
 bool Device::setCameraExposureTime() {
-    LOG_DEBUG << "Device::setCameraExposureTime";
+    LOG_DEBUG << "Device::setCameraExposureTime" << endl;
 
     if (!m_Camera->setExposureTime(CameraSetting.Exposure)) 
     {
-        LOG_ERROR << "Fail to set Exposure to " << CameraSetting.Exposure;
+        LOG_ERROR << "Fail to set Exposure to " << CameraSetting.Exposure << endl;
         m_Camera->grabCleanse();
         return false;
     }
@@ -234,10 +234,10 @@ bool Device::setCameraExposureTime() {
 }
 
 bool Device::setCameraExposureTime(double value) {
-    LOG_DEBUG << "Device::setCameraExposureTime";
+    LOG_DEBUG << "Device::setCameraExposureTime" << endl;
 
     if(!m_Camera->setExposureTime(value)) {
-        LOG_ERROR << "Fail to set exposure time to " << value;
+        LOG_ERROR << "Fail to set exposure time to " << value << endl;
         m_Camera->grabCleanse();
         return false;
     }
@@ -246,10 +246,10 @@ bool Device::setCameraExposureTime(double value) {
 }
 
 bool Device::setCameraGain(double value) {
-    LOG_DEBUG <<  "Device::setCameraGain";
+    LOG_DEBUG <<  "Device::setCameraGain" << endl;
 
     if(!m_Camera->setGain(value)) {
-        LOG_ERROR << "Fail to set gain to " << value;
+        LOG_ERROR << "Fail to set gain to " << value << endl;
         m_Camera->grabCleanse();
         return false;
     }
@@ -258,11 +258,11 @@ bool Device::setCameraGain(double value) {
 }
 
 bool Device::setCameraGain() {
-    LOG_DEBUG << "Device::setCameraGain";
+    LOG_DEBUG << "Device::setCameraGain" << endl;
 
     if (!m_Camera->setGain(CameraSetting.Gain)) 
     {
-        LOG_ERROR << "Fail to set Gain to " << CameraSetting.Gain;
+        LOG_ERROR << "Fail to set Gain to " << CameraSetting.Gain << endl;
         m_Camera->grabCleanse();
         return false;
     }
@@ -271,10 +271,10 @@ bool Device::setCameraGain() {
 }
 
 bool Device::setCameraFPS() {
-    LOG_DEBUG << "Device::setCameraFPS";
+    LOG_DEBUG << "Device::setCameraFPS" << endl;
 
     if(!m_Camera->setFPS(CameraSetting.FPS)) {
-        LOG_ERROR << "Fail to set FPS to " << CameraSetting.FPS;
+        LOG_ERROR << "Fail to set FPS to " << CameraSetting.FPS << endl;
         m_Camera->grabCleanse();
         return false;
     }
@@ -285,7 +285,7 @@ bool Device::setCameraFPS() {
 //apply current configuration to the camera
 bool Device::initializeCamera() {
 
-   LOG_DEBUG << "Device::initializeCamera";
+    LOG_DEBUG << "Device::initializeCamera" << endl;
 
     printValues(CameraSetting, "Device::initializeCamera;");
 
@@ -305,7 +305,7 @@ bool Device::initializeCamera() {
     //apply streaming rules
     if(!m_Camera->grabInitialization())
     {
-        LOG_ERROR << "Fail to initialize camera.";
+        LOG_ERROR << "Fail to initialize camera." << endl;
         m_Camera->grabCleanse();
         return false;
     }
@@ -315,9 +315,9 @@ bool Device::initializeCamera() {
 
 
 bool Device::startCamera(EAcquisitionMode mode) {
-    LOG_DEBUG << "Device::startCamera";
+    LOG_DEBUG << "Device::startCamera" << endl;
 
-    LOG_INFO << "Device::startCamera;" <<"Starting camera...";
+    LOG_INFO << "Device::startCamera;" <<"Starting camera..." << endl;
     switch (mode) {
     case EAcquisitionMode::CONTINUOUS:{
             if (!m_Camera->acqStart())
@@ -336,8 +336,8 @@ bool Device::startCamera(EAcquisitionMode mode) {
 
 bool Device::stopCamera()
 {
-    LOG_DEBUG << "Device::stopCamera" ;
-    LOG_INFO << "Stopping camera...";
+    LOG_DEBUG << "Device::stopCamera" << endl;
+    LOG_INFO << "Stopping camera..." << endl;
     m_Camera->acqStop();
     m_Camera->grabCleanse();
 
@@ -350,7 +350,7 @@ bool Device::stopCamera()
 bool Device::runContinuousCapture(shared_ptr<Frame> img)
 {
     if (LOG_SPAM_FRAME_STATUS)
-        LOG_DEBUG << "Device::runContinuousCapture";
+        LOG_DEBUG << "Device::runContinuousCapture" << endl;
 
     try
     {
@@ -359,18 +359,18 @@ bool Device::runContinuousCapture(shared_ptr<Frame> img)
     }
     catch (exception& ex)
     {
-        LOG_ERROR << "Exception grabImage..." << ex.what();
+        LOG_ERROR << "Exception grabImage..." << ex.what() << endl;
     }
     catch(...)
     {
-        LOG_ERROR << "Exception";
+        LOG_ERROR << "Exception" << endl;
     }
     
     return false;
 }
 
 bool Device::runSingleCapture(shared_ptr<Frame> img) {
-    LOG_DEBUG << "Device::runSingleCapture";
+    LOG_DEBUG << "Device::runSingleCapture" << endl;
 
     if(m_Camera->grabImage(img))
         return true;
@@ -381,11 +381,11 @@ bool Device::runSingleCapture(shared_ptr<Frame> img) {
 
 bool Device::setCameraSize()
 {
-    LOG_DEBUG << "Device::setCameraSize; "<< CameraSetting.SizeWidth <<"x"<< CameraSetting.SizeHeight ;
+    LOG_DEBUG << "Device::setCameraSize; "<< CameraSetting.SizeWidth <<"x"<< CameraSetting.SizeHeight << endl;
     
     if(!m_Camera->setSize(CameraSetting.StartX, CameraSetting.StartY, CameraSetting.SizeWidth, CameraSetting.SizeHeight, CameraSetting.CustomSize))
     {
-        LOG_ERROR << "Device::setCameraSize;" <<"Fail to set camera size.";
+        LOG_ERROR << "Device::setCameraSize;" <<"Fail to set camera size." << endl;
         return false;
     }
 
@@ -393,10 +393,10 @@ bool Device::setCameraSize()
 }
 
 bool Device::setCameraSize(int x, int y, int w, int h) {
-    LOG_DEBUG << "Device::setCameraSize;"<<w<<"x"<<h;
+    LOG_DEBUG << "Device::setCameraSize;"<<w<<"x"<<h << endl;
 
     if(!m_Camera->setSize(x, y, w, h, true)) {
-       LOG_ERROR << "Device::setCameraSize;" << "Fail to set camera size.";
+       LOG_ERROR << "Device::setCameraSize;" << "Fail to set camera size." << endl;
         return false;
     }
 
@@ -413,25 +413,25 @@ bool Device::getCameraStatus() {
 }
 
 bool Device::getCameraDataSetStatus() {
-    LOG_DEBUG << "Device::getCameraDataSetStatus";
+    LOG_DEBUG << "Device::getCameraDataSetStatus" << endl;
 
     return m_Camera->getDataSetStatus();
 }
 
 bool Device::loadNextCameraDataSet(string &location) {
-    LOG_DEBUG << "Device::loadNextCameraDataSet";
+    LOG_DEBUG << "Device::loadNextCameraDataSet" << endl;
 
     return m_Camera->loadNextDataSet(location);
 }
 
 bool Device::getExposureStatus() {
-    LOG_DEBUG << "Device::getExposureStatus";
+    LOG_DEBUG << "Device::getExposureStatus" << endl;
 
     return m_Camera->isExposureAvailable();
 }
 
 bool Device::getGainStatus() {
-    LOG_DEBUG << "Device::getGainStatus";
+    LOG_DEBUG << "Device::getGainStatus" << endl;
 
     return m_Camera->isGainAvailable();
 }
