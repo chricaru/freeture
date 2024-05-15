@@ -1003,42 +1003,13 @@ using namespace std;
                 throw runtime_error("SDK not initialized");
 
             if (continuous) {
-                // Disable stream packet resend
-                //    Enable stream packet resend before starting the stream. Images are
-                //    sent from the camera to the host in packets using UDP protocol,
-                //    which includes a header image number, packet number, and timestamp
-                //    information. If a packet is missed while receiving an image, a
-                //    packet resend is requested and this information is used to retrieve
-                //    and redeliver the missing packet in the correct order.
-
-                LOG_INFO << "CameraLucidArena_PHX016S::acqStart;" << "Disable stream packet resend" << endl;
-                Arena::SetNodeValue<bool>(m_ArenaDevice->GetTLStreamNodeMap(), "StreamPacketResendEnable", false);
-
-                // Set acquisition mode
-                //    Set acquisition mode before starting the stream. Starting the stream
-                //    requires the acquisition mode to be set beforehand. The acquisition
-                //    mode controls the number of images a device acquires once the stream
-                //    has been started. Setting the acquisition mode to 'Continuous' keeps
-                //    the stream from stopping. This example returns the camera to its
-                //    initial acquisition mode near the end of the example.
-                LOG_INFO << "CameraLucidArena_PHX016S::acqStart;" << "Set camera to CONTINUOUS MODE" << endl;
-                Arena::SetNodeValue<GenICam::gcstring>(m_ArenaDevice->GetNodeMap(), "AcquisitionMode", "Continuous");
+                if (!setContinuousMode())
+                    throw runtime_error("Error setting Continuous Mode");
             }
             else
             {
-                // Disable stream packet resend
-                //    Enable stream packet resend before starting the stream. Images are
-                //    sent from the camera to the host in packets using UDP protocol,
-                //    which includes a header image number, packet number, and timestamp
-                //    information. If a packet is missed while receiving an image, a
-                //    packet resend is requested and this information is used to retrieve
-                //    and redeliver the missing packet in the correct order.
-
-                LOG_INFO << "CameraLucidArena_PHX016S::acqStart;" << "Enable stream packet resend" << endl;
-                Arena::SetNodeValue<bool>(m_ArenaDevice->GetTLStreamNodeMap(), "StreamPacketResendEnable", true);
-
-                LOG_INFO << "CameraLucidArena_PHX016S::acqStart;" << "Set camera to SINGLEFRAME" << endl;
-                Arena::SetNodeValue<GenICam::gcstring>(m_ArenaDevice->GetNodeMap(), "AcquisitionMode", "SingleFrame");
+                if (!setSingleShotMode())
+                    throw runtime_error("Error setting Single Shot Mode");
             }
 
             // Start stream
@@ -1076,14 +1047,39 @@ using namespace std;
 
     /// <summary>
     /// Set continuous mode ans set FPS to current rate
+    ///Disable stream packet resend
+    ///    Enable stream packet resend before starting the stream. Images are
+    ///    sent from the camera to the host in packets using UDP protocol,
+    ///    which includes a header image number, packet number, and timestamp
+    ///    information. If a packet is missed while receiving an image, a
+    ///    packet resend is requested and this information is used to retrieve
+    ///    and redeliver the missing packet in the correct order.
     /// </summary>
-    bool CameraLucidArena_PHX016S::setContinuousMode() {
+    bool CameraLucidArena_PHX016S::setContinuousMode()
+    {
         try {
             LOG_DEBUG << "CameraLucidArena_PHX016S::setContinuousMode" << endl;
 
             if (!checkSDKDevice())
                 throw runtime_error("SDK not initialized");
 
+            // Disable stream packet resend before starting the stream. Images are
+            //    sent from the camera to the host in packets using UDP protocol,
+            //    which includes a header image number, packet number, and timestamp
+            //    information. If a packet is missed while receiving an image, a
+            //    packet resend is requested and this information is used to retrieve
+            //    and redeliver the missing packet in the correct order.
+            LOG_INFO << "CameraLucidArena_PHX016S::setContinuousMode;" << "Disable stream packet resend" << endl;
+            Arena::SetNodeValue<bool>(m_ArenaDevice->GetTLStreamNodeMap(), "StreamPacketResendEnable", false);
+
+            // Set acquisition mode
+            //    Set acquisition mode before starting the stream. Starting the stream
+            //    requires the acquisition mode to be set beforehand. The acquisition
+            //    mode controls the number of images a device acquires once the stream
+            //    has been started. Setting the acquisition mode to 'Continuous' keeps
+            //    the stream from stopping. This example returns the camera to its
+            //    initial acquisition mode near the end of the example.
+            LOG_INFO << "CameraLucidArena_PHX016S::setContinuousMode;" << "Set camera to CONTINUOUS MODE" << endl;
             Arena::SetNodeValue<GenICam::gcstring>(m_ArenaDevice->GetNodeMap(), "AcquisitionMode", "Continuous");
 
             if (!setFPS(m_CameraSettings.ACQ_FPS))
@@ -1116,6 +1112,10 @@ using namespace std;
             if (!checkSDKDevice())
                 throw runtime_error("SDK not initialized");
 
+            LOG_INFO << "CameraLucidArena_PHX016S::setSingleShotMode;" << "Disable stream packet resend" << endl;
+            Arena::SetNodeValue<bool>(m_ArenaDevice->GetTLStreamNodeMap(), "StreamPacketResendEnable", true);
+
+            LOG_INFO << "CameraLucidArena_PHX016S::setSingleShotMode;" << "Set camera to SINGLEFRAME" << endl;
             Arena::SetNodeValue<GenICam::gcstring>(m_ArenaDevice->GetNodeMap(), "AcquisitionMode", "SingleFrame");
 
             if (!setFPS(MIN_FPS))
