@@ -42,7 +42,7 @@ https://sourceforge.net/projects/opencvlibrary/files/4.5.1/
 
 OPEN SSL
 
-Downloading OpenSSL from [https://slproweb.com/products/Win32OpenSSL.html](http://www.npcglib.org/~stathis/blog/precompiled-openssl ) (Win64 OpenSSL v1.1.0f)
+Downloading OpenSSL from [https://slproweb.com/products/Win32OpenSSL.html](http://www.npcglib.org/~stathis/blog/precompiled-openssl ) (Win64 OpenSSL v1.1.0f vs2017)
 
 LIB ARAVIS
 debian:bullseye version is 0.8
