@@ -486,8 +486,8 @@ bool DetectionTemporal::runDetection(std::shared_ptr<Frame> c) {
             // Iterator list on localEvent list : localEvent contains a positive or negative cluster.
             vector<vector<LocalEvent>::iterator > itLePos, itLeNeg;
 
-            // Association of a positive cluster localEvent with a negative cluster localEvent.
-            vector<pair<vector<LocalEvent>::iterator, vector<LocalEvent>::iterator> > itPair;
+
+
 
             itLE = listLocalEvents.begin();
 
@@ -505,7 +505,7 @@ bool DetectionTemporal::runDetection(std::shared_ptr<Frame> c) {
 
             }
 
-            int maxRadius = 50;
+            
 
             // Try to link a positive cluster to a negative one.
             for(int i = 0; i < itLePos.size(); i++) {
@@ -519,7 +519,7 @@ bool DetectionTemporal::runDetection(std::shared_ptr<Frame> c) {
 
                     cv::Point A = (*itLePos.at(i)).getMassCenter();
                     cv::Point B = (*(*j)).getMassCenter();
-                    double dist = sqrt(pow((A.x - B.x),2) + pow((A.y - B.y),2));
+                    double dist = cv::norm(A-B);
 
                     if(dist < 50) {
 
@@ -751,56 +751,51 @@ bool DetectionTemporal::runDetection(std::shared_ptr<Frame> c) {
 
                 // CASE 2 : NOT FINISHED EVENT.
                 }
-                else 
+                else
                 {
                     int nbsec = TimeDate::secBetweenTwoDates(global_event->getDate(), c->mDate);
                     bool maxtime = false;
                     if(nbsec > mdtp.DET_TIME_MAX)
                         maxtime = true;
+                    int q = 0;
+                    if(maxtime) {
+                        TimeDate::Date gedate = global_event->getDate();
+                        LOG_INFO << "# GE deleted because max time reached : " << endl;
+                        string m = "- global_event.getDate() : "
+                                + Conversion::numbering(4, gedate.year) + Conversion::intToString(gedate.year)
+                                + Conversion::numbering(2, gedate.month) + Conversion::intToString(gedate.month)
+                                + Conversion::numbering(2, gedate.day) + Conversion::intToString(gedate.day) + "T"
+                                + Conversion::numbering(2, gedate.hours) + Conversion::intToString(gedate.hours)
+                                + Conversion::numbering(2, gedate.minutes) + Conversion::intToString(gedate.minutes)
+                                + Conversion::numbering(2, gedate.seconds) + Conversion::intToString((int)gedate.seconds);
 
-                    // Check some characteristics : Too long event ? not linear ?
-                    if( maxtime
-                        || (!global_event->getLinearStatus()
-                        && !global_event->continuousGoodPos(5,msgGe))
-                        || (!global_event->getLinearStatus()
-                        && global_event->continuousBadPos((int)global_event->getAge()/2))){
+                        LOG_INFO << m << endl;
 
-                        if (!global_event->getLinearStatus() && !global_event->continuousGoodPos(5, msgGe))
-                            LOG_DEBUG << "Event discarded because not linear even if good positioned" << endl;
-                       
-                        if (!global_event->getLinearStatus() && global_event->continuousBadPos((int)global_event->getAge() / 2))
-                            LOG_DEBUG << "Event discarded because not linear and bad positioned" << endl;
+                        LOG_INFO << "- c.mDate : "
+                                << Conversion::numbering(4, c->mDate.year) << Conversion::intToString(c->mDate.year)
+                                << Conversion::numbering(2, c->mDate.month) << Conversion::intToString(c->mDate.month)
+                                << Conversion::numbering(2, c->mDate.day) << Conversion::intToString(c->mDate.day) << "T"
+                                << Conversion::numbering(2, c->mDate.hours) << Conversion::intToString(c->mDate.hours)
+                                << Conversion::numbering(2, c->mDate.minutes) << Conversion::intToString(c->mDate.minutes)
+                                << Conversion::numbering(2, c->mDate.seconds) << Conversion::intToString((int)c->mDate.seconds)
+                                << endl;
 
-                        if(maxtime) {
-                                TimeDate::Date gedate = global_event->getDate();
-                                LOG_INFO << "# GE deleted because max time reached : " << endl;
-                                string m = "- global_event.getDate() : "
-                                    + Conversion::numbering(4, gedate.year) + Conversion::intToString(gedate.year)
-                                    + Conversion::numbering(2, gedate.month) + Conversion::intToString(gedate.month)
-                                    + Conversion::numbering(2, gedate.day) + Conversion::intToString(gedate.day) + "T"
-                                    + Conversion::numbering(2, gedate.hours) + Conversion::intToString(gedate.hours)
-                                    + Conversion::numbering(2, gedate.minutes) + Conversion::intToString(gedate.minutes)
-                                    + Conversion::numbering(2, gedate.seconds) + Conversion::intToString((int)gedate.seconds);
-
-                                LOG_INFO << m << endl;
-
-                                LOG_INFO << "- c.mDate : "
-                                    << Conversion::numbering(4, c->mDate.year) << Conversion::intToString(c->mDate.year)
-                                    << Conversion::numbering(2, c->mDate.month) << Conversion::intToString(c->mDate.month)
-                                    << Conversion::numbering(2, c->mDate.day) << Conversion::intToString(c->mDate.day) << "T"
-                                    << Conversion::numbering(2, c->mDate.hours) << Conversion::intToString(c->mDate.hours)
-                                    << Conversion::numbering(2, c->mDate.minutes) << Conversion::intToString(c->mDate.minutes)
-                                    << Conversion::numbering(2, c->mDate.seconds) << Conversion::intToString((int)c->mDate.seconds)
-                                    << endl;
-
-                                LOG_INFO << "- difftime in sec : " << nbsec << endl;
-                                LOG_INFO << "- maxtime in sec : " << mdtp.DET_TIME_MAX << endl;
-                        }
-
+                        LOG_INFO << "- difftime in sec : " << nbsec << endl;
+                        LOG_INFO << "- maxtime in sec : " << mdtp.DET_TIME_MAX << endl;
+                        q++
+                    }
+                    if (!global_event->getLinearStatus() && !global_event->continuousGoodPos(5, msgGe)) {
+                        LOG_DEBUG << "Event discarded because not linear even if good positioned" << endl;
+                        q++
+                    }
+                    if (!global_event->getLinearStatus() && global_event->continuousBadPos((int)global_event->getAge() / 2)) {
+                        LOG_DEBUG << "Event discarded because not linear and bad positioned" << endl;
+                        q++
+                    }
+                    if (q != 0){
                         itGE = mListGlobalEvents.erase(itGE); // Delete the event.
-
-                    // Let the GE alive.
-                    }else if(c->mFrameRemaining < 10 && c->mFrameRemaining != 0) {
+                    }
+                    if (q = 0 && c->mFrameRemaining < 10 && c->mFrameRemaining != 0) {
 
                         if(global_event->LEList.size() >= 5 && global_event->continuousGoodPos(4,msgGe) && global_event->ratioFramesDist(msgGe)&& global_event->negPosClusterFilter(msgGe)){
 
@@ -816,6 +811,11 @@ bool DetectionTemporal::runDetection(std::shared_ptr<Frame> c) {
                         ++itGE; // Do nothing to the current GE, check the following one.
                     }
                 }
+
+
+                
+
+                
             }
 
             tStep4 = (double)cv::getTickCount() - tStep4;
