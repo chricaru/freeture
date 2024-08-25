@@ -944,7 +944,7 @@ int nbRoiAttachedToLE = 0;
 int nbNoCreatedLE = 0;
 int nbROI = 0;
 int nbRoiNotAnalysed = 0;
-int roicounter = 0;
+
 
 unsigned char * ptr;
 
@@ -969,7 +969,7 @@ for(int i = 0; i < subdivision.rows; i++) {
                     +  Conversion::intToString(subdivisionPos.x + j) + ";" + Conversion::intToString(subdivisionPos.y + i) + ")\n";
 
                 nbROI++;
-                roicounter++;
+                
                 // Get colors in eventMap at the current ROI location.
                 vector<cv::Scalar> listColorInRoi = getColorInEventMap(eventMap, cv::Point(subdivisionPos.x + j, subdivisionPos.y + i));
 

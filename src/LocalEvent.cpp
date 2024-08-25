@@ -352,8 +352,8 @@ cv::Mat LocalEvent::createPosNegAbsMap() {
 void LocalEvent::mergeWithAnOtherLE(LocalEvent &LE) {
 
     mLeRoiList.insert(mLeRoiList.end(), LE.mLeRoiList.begin(), LE.mLeRoiList.end());
+ 
 
-    double dist = sqrt(pow((mLeMassCenter.x - LE.getMassCenter().x),2) + pow((mLeMassCenter.y - LE.getMassCenter().y),2));
     completeGapWithRoi(mLeMassCenter,LE.getMassCenter());
     mAbsPos.insert(mAbsPos.end(), LE.mAbsPos.begin(), LE.mAbsPos.end());
     mPosPos.insert(mPosPos.end(), LE.mPosPos.begin(), LE.mPosPos.end());
@@ -371,23 +371,16 @@ void LocalEvent::completeGapWithRoi(cv::Point p1, cv::Point p2) {
 
     cv::Mat roi(10,10,CV_8UC1, cv::Scalar(255));
 
-    double dist = sqrt(pow((p1.x - p2.x),2) + pow((p1.y - p2.y),2));
+     
 
-    double part = dist / 10.0;
+    double part = sqrt(pow((p1.x - p2.x),2) + pow((p1.y - p2.y),2)) / 10.0;
 
     if((int)part!=0) {
 
-        cv::Point p3 = cv::Point(p1.x,p2.y);
-
-        double dist1 = sqrt(pow((p1.x - p3.x),2) + pow((p1.y - p3.y),2)); //A--> C
-        double dist2 = sqrt(pow((p2.x - p3.x),2) + pow((p2.y - p3.y),2)); //B-> C
-
-        double part1 = dist1 / part;
-        double part2 = dist2 / part;
-
         for(int i = 0; i < part ; i++){
-
-            cv::Point p = cv::Point((int)(p3.x + i * part2), (int)(p1.y + i* part1));
+            
+            cv::Point p = cv::Point((int)(p1.x+i*((p2.x-p1.x)/part)),(int)(p1.y+i*((p2.y-p1.y)/part)))
+        };
 
             if(p.x-5 > 0 && p.x+5 < mLeMap.cols && p.y-5 > 0 && p.y+5 < mLeMap.rows)
                 roi.copyTo(mLeMap(cv::Rect(p.x-5,p.y-5,10,10)));
