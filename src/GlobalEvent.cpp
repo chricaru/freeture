@@ -107,8 +107,8 @@ bool GlobalEvent::addLE(LocalEvent le){
                 cv::Point B = mainPts.back();
                 listB.push_back(B);
                 // Get current le position.
-                cv::Point C = center;
-                listC.push_back(C);
+                
+                listC.push_back(Center);
                 // Vector from first main point to last main point.
                 cv::Point u  = cv::Point(B.x - A.x, B.y - A.y);
                 listu.push_back(u);
@@ -146,9 +146,9 @@ bool GlobalEvent::addLE(LocalEvent le){
                     */
 
                     // Norm vector u
-                    float normU = sqrt(pow(u.x,2.0)+pow(u.y,2.0));
+                    float normU = cv::norm(u);
                     // Norm vector v
-                    float normV = sqrt(pow(v.x,2.0)+pow(v.y,2.0));
+                    float normV =  cv::norm(v);
                     // Compute angle between u and v.
                     float thetaRad = (u.x*v.x+u.y*v.y)/(normU*normV);
                     listRad.push_back(thetaRad);
@@ -307,7 +307,7 @@ bool GlobalEvent::continuousBadPos(int n){
 bool GlobalEvent::negPosClusterFilter(std::string &msg) {
 
     msg += "negPosClusterFilter\n";
-    float counter = 0;
+    short int counter = 0;
     msg += "clusterNegPos size = " +Conversion::intToString(clusterNegPos.size())+ " \n";
     for(int i = 0; i < clusterNegPos.size(); i++) {
 
@@ -321,7 +321,7 @@ bool GlobalEvent::negPosClusterFilter(std::string &msg) {
 
     }
 
-    if(counter >= (float)clusterNegPos.size()/2.0 && counter !=0) {
+    if(counter >= clusterNegPos.size()/2.0 && counter !=0) {
         msg += "negPosClusterFilter = OK\n";
         return true;
     }else {
