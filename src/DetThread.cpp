@@ -246,8 +246,8 @@ void DetThread::operator()()
 
                     t = (double)cv::getTickCount();
 
-                    if (lastFrame->Image)
-                        if (lastFrame->Image->data)
+                    if (lastFrame->Image && lastFrame->Image->data)
+                        
                         {
                             mFormat = lastFrame->mFormat;
 
