@@ -307,7 +307,7 @@ bool GlobalEvent::continuousBadPos(int n){
 bool GlobalEvent::negPosClusterFilter(std::string &msg) {
 
     msg += "negPosClusterFilter\n";
-    short int counter = 0;
+    float counter = 0;
     msg += "clusterNegPos size = " +Conversion::intToString(clusterNegPos.size())+ " \n";
     for(int i = 0; i < clusterNegPos.size(); i++) {
 
@@ -321,7 +321,7 @@ bool GlobalEvent::negPosClusterFilter(std::string &msg) {
 
     }
 
-    if(counter >= clusterNegPos.size()/2.0 && counter !=0) {
+    if(counter >=  (float)clusterNegPos.size()/2.0 && counter !=0) {
         msg += "negPosClusterFilter = OK\n";
         return true;
     }else {
