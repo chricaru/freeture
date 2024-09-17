@@ -108,7 +108,7 @@ bool GlobalEvent::addLE(LocalEvent le){
                 listB.push_back(B);
                 // Get current le position.
                 
-                listC.push_back(Center);
+                listC.push_back(center);
                 // Vector from first main point to last main point.
                 cv::Point u  = cv::Point(B.x - A.x, B.y - A.y);
                 listu.push_back(u);
